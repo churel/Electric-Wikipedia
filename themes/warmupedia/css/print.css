@@ -1,0 +1,9 @@
+@media print {
+	.banner {
+		display:none;
+	}
+	.for-print {
+		text-align: center;
+		margin:25px 0px;
+	}
+}
