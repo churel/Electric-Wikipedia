@@ -29,6 +29,9 @@ footer {
 .banner-article {
   min-height: 200px;
 }
+.banner-product-category {
+  min-height: 300px;
+}
 .product-block {
   color:white;
   background: url('/themes/warmupedia/images/default-banner.jpg') no-repeat center top;
@@ -71,6 +74,12 @@ nav .navbar-collapse{
     padding: 0px;
   }
   
+}
+.btn-category-picture i {
+  margin-right:5px;
+}
+.btn-category-video i {
+  margin-right:3px;
 }
 p {
   font-size: 16px;

@@ -22,15 +22,14 @@
 
 <% if $Children %>
 <div class="container" >
-<h2 class="product-sub-title"> List of articles about $Title </h2>
 	<div class="filters" id="contain">
-		<div class="text-filter">Please use these filters : </div>
+		<h2 class="text-filter ">Please use these filters : </h2>
 		$getCategories()
 	</div>
 
 	 	<div class="list-articles">
 	 		<% loop $Children %>
-	 			<div class="article $getCategoryClass() <% if $Video %> cat-video <% end_if%> ">
+	 			<div class="article $getCategoryClass() <% if $Video %> cat-video <% end_if%> <% if $Picture %> cat-picture <% end_if%> ">
 	 				<div class="article-title">
 
 		 				<h3>$Title</h3> 
@@ -38,7 +37,10 @@
 		 				<div class="category">
 			 					<a class="btn-category" href="#filter-$getCategoryClass()"data-filter="$getCategoryClass()"><i class="glyphicon glyphicon-tag"></i> $Category</a>
 			 					<% if $Video %>
-			 						<a class="btn-category" href="#cat-video" data-filter="cat-video"><i class="glyphicon glyphicon-play"></i>Video</a>
+			 						<a class="btn-category btn-category-video" href="#cat-video" data-filter="cat-video"><i class="glyphicon glyphicon-play"></i>Video</a>
+			 					<% end_if %>
+			 					<% if $Picture %>
+			 						<a class="btn-category btn-category-picture"  href="#cat-picture" data-filter="cat-picure"><i class="glyphicon glyphicon-picture"></i>Picture</a>
 			 					<% end_if %>
 			 			</div>
 			 			<% end_if %>

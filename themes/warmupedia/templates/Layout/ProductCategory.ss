@@ -1,4 +1,4 @@
-<div class="banner" <% if $BannerImg %> style="background: url($BannerImg.url) " <% end_if %> >
+<div class="banner banner-product-category" <% if $BannerImg %> style="background: url($BannerImg.url) " <% end_if %> >
 		<div class="container content-area">
 				<div class="banner-content-category"> 
 					<h1>$Title</h1>
@@ -18,10 +18,12 @@
 	  <h2> Please select your product : </h2>
 	  <div class="row choose-product">
 	  <% loop $Children %>
-	    <a href="$Link"  class="col-md-4 product-box" >
+	    <a href="$Link" title="$Title"  class="col-md-4 product-box" >
 	    	<div class="product-inside-block" >
 	    		<div class="product-content">
-	     			$Photo.CroppedImage(250,200) <h4>$Title</h4><button class="btn product-button" type="submit">Get a answer <i class="glyphicon glyphicon-menu-right"></i></button>
+	     			$Photo.CroppedImage(250,200) 
+	     			<h4> $Title</h4>
+	     			<button class="btn product-button" type="submit">Get an answer <i class="glyphicon glyphicon-menu-right"></i></button>
 	    		</div>
 	    	</div>
 	    </a>

@@ -34,6 +34,9 @@ class Product extends Page {
    			 $categories[$categorie] = "<a href=\"#filter-$categorie_class\" data-filter=\"$categorie_class\" class=\"btn btn-large btn-warmupedia $categorie_class \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . $categorie . "</a>";
 			 if($article->Video) {
 			 	 $categories['video'] = "<a href=\"#filter-video\" data-filter=\"cat-video\" class=\"btn btn-large btn-warmupedia cat-video \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . 'Video' . "</a>";
+			 }
+			 if($article->Picture) {
+			 	 $categories['picture'] = "<a href=\"#filter-picture\" data-filter=\"cat-picture\" class=\"btn btn-large btn-warmupedia cat-pictyre \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . 'Picture' . "</a>";
 	
 			 }
 		}
@@ -48,7 +51,7 @@ class Product extends Page {
 			'Wiring'  => 'cat-wir',
 			'Preparing for your project'  => 'cat-prep',
 			'Troubleshooting' => 'cat-troub',
-			'Miscellaneous Questions' => 'cat-misc'
+			'Miscellaneous Questions' => 'cat-misc',
 		);
 		
 		return $map[$cat];

@@ -5,6 +5,7 @@ class Article extends Page {
 		'Category' => 'Varchar(100)',
 		'Teaser' => 'HTMLText',
 		'Video' => 'Boolean',
+		'Picture' => 'Boolean'
 
 	);
 
@@ -16,16 +17,17 @@ class Article extends Page {
 
 	public function getCMSfields() {
 		$fields = parent::getCMSfields();
-		$fields->addFieldToTab('Root.Main', HtmlEditorField::create('Teaser','Teaser'), 'Content');
+		$fields->addFieldToTab('Root.Main', HtmlEditorField::create('Teaser','Teaser')->setRightTitle('Please limit your description to two or three sentences'), 'Content');
 		$components = DropdownField::create('Category', 'Category', array(
 			'Installation' => 'Installation',
-			'Programmation' => 'Programmation',
+			'Programming' => 'Programming',
 			'Wiring'  => 'Wiring',
 			'Preparing for your project'  => 'Preparing for your project',
 			'Troubleshooting' => 'Troubleshooting',
 			'Miscellaneous Questions' => 'Miscellaneous Questions'))->setEmptyString('(Select one)');
 		$fields->addFieldToTab('Root.Main', $components,'Content');
 		$fields->addFieldToTab("Root.Main", new CheckboxField ("Video","Video"), "Category");
+		$fields->addFieldToTab("Root.Main", new CheckboxField ("Picture","Contain one or more picture"), "Category");
 		return $fields;
 	}
 	function getCMSValidator() {
