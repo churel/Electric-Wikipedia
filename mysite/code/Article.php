@@ -27,7 +27,7 @@ class Article extends Page {
 			'Miscellaneous Questions' => 'Miscellaneous Questions'))->setEmptyString('(Select one)');
 		$fields->addFieldToTab('Root.Main', $components,'Content');
 		$fields->addFieldToTab("Root.Main", new CheckboxField ("Video","Video"), "Category");
-		$fields->addFieldToTab("Root.Main", new CheckboxField ("Picture","Contain one or more picture"), "Category");
+		$fields->addFieldToTab("Root.Main", new CheckboxField ("Picture","Contains one or more picture"), "Category");
 		return $fields;
 	}
 	function getCMSValidator() {
