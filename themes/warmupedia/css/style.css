@@ -55,6 +55,9 @@ nav.navbar {
 nav .navbar-collapse{
     background-color: white;
 }
+.navbar-collapse.in {
+  height: 350px;
+}
 .navbar-collapse.in ul {
   text-align: center;
 }
