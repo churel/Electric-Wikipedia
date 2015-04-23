@@ -479,16 +479,8 @@ footer .accreditations  li img{
     text-align:center;
   }
 }
-.quick-menu {
-  list-style: none;
-  padding-right:5px;
-  padding-left:0px;
-}
-.quick-menu li {
-  padding: 5px;
-  border:solid 1px;
-  border-top:none;
-}
+
+
 .banner-content {
   margin-top: 100px;
 }
@@ -508,8 +500,47 @@ footer .accreditations  li img{
   padding-bottom:25px;
   
 }
-.quick-menu li.first {
-  border-top:solid 1px;
+.quick-menu ul {
+  list-style: none;
+  padding-left:15px;
+  margin-right:10px;
+}
+.quick-menu li a{
+  padding: 5px;
+
+}
+.quick-menu li.categorie a {
+  color : #ce1126;
+}
+.quick-menu li.categorie a:hover {
+  background-color: #ce1126;
+  color : white;
+}
+.quick-menu li.quick-article  a{
+  color : #505050;
+}
+.quick-menu li.quick-article  a:hover{
+  background-color : #505050;
+  color:white;
+}
+.quick-menu .quick-article.artive  a{
+  color : white;
+}
+.quick-menu .categorie i{
+  float: right;
+  -webkit-transition: transform 0.5s; /* Safari */
+  ransition: transform 0.5s;
+}
+.quick-menu .dropdown i{
+  -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+.quick-menu {
+  list-style: none;
+  padding-right:5px;
+  padding-left:0px;
 }
 .quick-menu  a {
   color:inherit;
@@ -517,21 +548,22 @@ footer .accreditations  li img{
   display: block;
   text-decoration: none;
 }
-.quick-menu li.active {
+.quick-menu li.active a{
   color:white;
   background-color:#505050;
-  border:solid 1px #505050;
   border-top:none;
 }
-.quick-menu  li:hover {
+.quick-menu .quick-article li a:hover{
   color:white;
   background-color:#505050;
-  border:solid 1px #505050;
-  border-top:none;
+
 }
-.quick-menu li.active.first:hover {
-  border-top:solid 1px;
+.quick-menu li a:hover{
+  color:white;
+  background-color:#505050;
+
 }
+
 .btn-category {
   background-color:#ce1126;
   font-size:12px;
@@ -643,6 +675,9 @@ footer .accreditations  li img{
 #MemberLoginForm_LoginForm input.checkbox {
     margin-left: 50%;
     position: inherit;
+}
+.quick-articles-list {
+  display:none;
 }
 /****** FILE: themes/warmup/css/style.css *****/
 @font-face{

@@ -12,6 +12,7 @@
 		</div>
 		<div class="sidebar hidden-sm hidden-xs">
 			<h2> Quick Menu </h3>
+			
 			<div class="sidebar-menu hidden-print" >
 				<div class="share ">
 					<% if not $Video %>
@@ -23,19 +24,8 @@
 						<i class="glyphicon glyphicon-envelope"></i> 
 					</a>
 				</div>
-				<% control Parent %>
-					<ul class="quick-menu">
-					<% loop $Children %>
-						
-						<%if $ID = $Top.ID %>
-							<li class="active <% if $First %>first<% end_if %>" ><a href="$Link">$Title  <i class="glyphicon glyphicon-menu-right"></i></a></li>
-						<% else %>
-							<li <% if $First %>class="first" <% end_if %>><a href="$Link">$Title  <i class="glyphicon glyphicon-menu-right" onClick="window.print()"></i></a></li>
-						<% end_if %>
-					<% end_loop %>
-					</ul>
+				$getQuickMenu()
 				</div>
-			<% end_control %>
 		</div>
 		<div class="not-sidebar-content ">
 			<h1>$Title</h1>

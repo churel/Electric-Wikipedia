@@ -45,9 +45,56 @@ class Article extends Page {
 		
 		return $map[$this->Category];
 	}
-	public function isCurrent() {
 
+	public function getQuickMenu() {
+		
+		$articles = Article::get()->filter(array('ParentID' => $this->ParentID));
+		$categories = array();
+		$id = $this->id;
+		foreach($articles as $article) { 
+			 $categorie = $article->Category;
+			 if($article->ID == $this->ID) {
+			 	
+			 	$categories[$categorie]['name']  = $categorie;
+			 	$categories[$categorie]['active'] = true;
+		
+			 	$categories[$categorie]['article'][] = array('title' => $article->Title, 'active' =>true, 'link' => $article->Link());
+			 }
+			 else {
+			 	$categories[$categorie]['name']  = $categorie;
+			 	$categories[$categorie]['article'][] = array('title' => $article->Title, 'active' =>false,  'link'=> $article->Link());
+			 }
+		}
+		$content = '<ul class="quick-menu">';
+		$count =1 ;
+		foreach($categories as $categorie) {
+			if($count == 1) {
+				$class = " categorie first";
+			}
+			else {
+				$class = " categorie";
+			}
+			if(isset($categorie['active']) && $categorie['active'] == true) {
+				$content .= "<li class=\"$class dropdown\" ><a href=\"#\">".$categorie['name'] ."<i class=\"glyphicon glyphicon-menu-right\"></i></a><ul class=\"quick-articles-list\">";
+			}
+			else {
+				$content .= "<li class=\"$class\"><a href=\"#\">".$categorie['name'] ."<i class=\"glyphicon glyphicon-menu-right\"></i></a><ul class=\"quick-articles-list\">";
+			}
+
+			foreach($categorie['article'] as $article) {
+				$article_class = '';
+				if(isset($article['active']) && $article['active'] == true) {
+					$article_class = ' active';
+				}
+				$content .= '<li class="quick-article '.$article_class.'"> <a href="'.$article['link'] .'">' . $article['title'].'</a></li>';
+			}
+			$content .= "</ul></li>";
+			$count =2;
+		}
+		$content .= '<ul>';
+		return $content;
 	}
+
 }
 class Article_Controller extends Page_Controller {
 
