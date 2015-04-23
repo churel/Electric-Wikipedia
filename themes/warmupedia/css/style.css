@@ -281,7 +281,7 @@ input[type="submit"] {
   color:white;
 }
 
-#SearchForm_SearchForm input[type="text"], input[type="email"], input[type="password"], textarea {
+#SearchForm_SearchForm input[type="text"], input[type="email"] textarea {
   float: left;
   border: 1px solid #cccccc;
   padding: 5px;
@@ -627,6 +627,23 @@ footer .accreditations  li img{
   background-color:#505050;
   color:white;
  }
+ /**
+  * user login
+  */
+#MemberLoginForm_LoginForm {
+  text-align: center;
+  background-color:#ececec;
+    margin-left: 33%;
+  width: 33%;
+  padding-top:10px;
+}
+#MemberLoginForm_LoginForm .checkbox {
+  display: inherit;
+}
+#MemberLoginForm_LoginForm input.checkbox {
+    margin-left: 50%;
+    position: inherit;
+}
 /****** FILE: themes/warmup/css/style.css *****/
 @font-face{
   font-family:'museo_sans500';
