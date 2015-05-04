@@ -2,7 +2,8 @@
 <!--[if !IE]><!-->
 <html lang="$ContentLocale">
 <!--<![endif]-->
-<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+'; path=/';</script>
+<script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
+
 <!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
 <!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
 <!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->

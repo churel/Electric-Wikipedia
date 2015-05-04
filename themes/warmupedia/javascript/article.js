@@ -1,7 +1,10 @@
 
 +function() {
 	$( document ).ready(function() {
-
+	 $('.not-sidebar-content  img').each(function() {
+	 	$(this).removeAttr('width');
+	 	$(this).removeAttr('height');
+	 });
 
 	
     // Target your .container, .wrapper, .post, etc.
