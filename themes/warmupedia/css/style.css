@@ -682,6 +682,9 @@ footer .accreditations  li img{
 .quick-articles-list {
   display:none;
 }
+.not-sidebar-content  img {
+  max-width: 100%;
+}
 /****** FILE: themes/warmup/css/style.css *****/
 @font-face{
   font-family:'museo_sans500';
