@@ -36,7 +36,7 @@ class Product extends Page {
 			 	 $categories['video'] = "<a href=\"#filter-video\" data-filter=\"cat-video\" class=\"btn btn-large btn-warmupedia cat-video \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . 'Video' . "</a>";
 			 }
 			 if($article->Picture) {
-			 	 $categories['picture'] = "<a href=\"#filter-picture\" data-filter=\"cat-picture\" class=\"btn btn-large btn-warmupedia cat-pictyre \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . 'Picture' . "</a>";
+			 	 $categories['picture'] = "<a href=\"#filter-picture\" data-filter=\"cat-picture\" class=\"btn btn-large btn-warmupedia cat-picture \"> <i class=\"glyphicon glyphicon-filter\"></i>  " . 'Picture' . "</a>";
 	
 			 }
 		}

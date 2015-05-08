@@ -21,7 +21,7 @@
 	    <a href="$Link"  class="col-md-6 product-box" >
 	    	<div class="product-block" <% if $BannerImg %> style="background: url($BannerImg.url) no-repeat center top;background-origin: content-box; background-size: cover;	 " <% end_if %>>
 	    		<div class="product-content">
-	     			$Image.CroppedImage(250,171) <h4>$Title</h4><button class="btn product-button" type="submit">Select</button>
+	     			$Image.CroppedImage(250,171) <h4>$Title</h4><button class="btn product-button" type="submit">Select <i class="glyphicon glyphicon-menu-right"></i></button>
 	    		</div>
 	    	</div>
 	    </a>

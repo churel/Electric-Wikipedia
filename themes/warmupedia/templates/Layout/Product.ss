@@ -40,7 +40,7 @@
 			 						<a class="btn-category btn-category-video" href="#cat-video" data-filter="cat-video"><i class="glyphicon glyphicon-play"></i>Video</a>
 			 					<% end_if %>
 			 					<% if $Picture %>
-			 						<a class="btn-category btn-category-picture"  href="#cat-picture" data-filter="cat-picure"><i class="glyphicon glyphicon-picture"></i>Picture</a>
+			 						<a class="btn-category btn-category-picture"  href="#cat-picture" data-filter="cat-picture"><i class="glyphicon glyphicon-picture"></i>Picture</a>
 			 					<% end_if %>
 			 			</div>
 			 			<% end_if %>
