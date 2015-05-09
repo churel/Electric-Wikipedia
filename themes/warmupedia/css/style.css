@@ -662,6 +662,10 @@ footer .accreditations  li img{
   background-color:#505050;
   color:white;
  }
+ .banner .content-area p a{
+  color :white;
+  text-decoration: underline;
+ }
  /**
   * user login
   */
