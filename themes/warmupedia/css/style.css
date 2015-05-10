@@ -243,7 +243,7 @@ input[type="submit"] {
 }
 @media (max-width: 1200px) {
   .products-download {
-     position: inherit;
+     position: initial;
   }
 }
 .btn-product:hover{
@@ -282,6 +282,7 @@ input[type="submit"] {
 .products-download .btn-warmupedia {
   background-color:white;
   border:none;
+  float:left;
 }
 .products-download .btn-warmupedia:hover {
   background-color:#505050;
@@ -341,7 +342,13 @@ input[type="submit"] {
 .form-group{
   margin-top: 22px;
 }  
-
+#list-link li {
+  margin-right: 0px;
+}
+.footer-title-link {
+  color:black;
+  font-size: 16px;
+}
 .icon-social {
   width: 30px;
   height: 30px;
@@ -395,7 +402,7 @@ footer p, footer a {
   color: #858585;
 } 
 footer .sitemap ul {
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 footer  .sitemap > ul > li {
   text-decoration: underline;
@@ -405,9 +412,9 @@ footer  .sitemap > ul > li {
 footer .sitemap li {
   list-style: none;
   margin-right: 1%;
-  width: 48%;
+  /*width: 48%;
   float: left;
-  display: inline;
+  display: inline;*/
    font-weight: normal;
 
 }
