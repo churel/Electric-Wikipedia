@@ -8,13 +8,13 @@
 		</div>
 		<div class="products-download">
 			<% if $Manual_Installation %>
-				<a target="blank" class="btn-product" href="$Manual_Installation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Installation Manual</a>
+				<a target="blank" class="btn-product btn-warmupedia" href="$Manual_Installation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Installation Manual</a>
 			<% end_if %>
 			<% if $Manual_Programmation %>
-				<a target="blank" class="btn-product" href="$Manual_Programmation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Programmation Manual</a>
+				<a target="blank" class="btn-product btn-warmupedia" href="$Manual_Programmation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Programmation Manual</a>
 			<% end_if %>
 			<% if $Specification_Sheet %>
-				<a target="blank" class="btn-product" href="$Specification_Sheet.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Specification Sheet</a>
+				<a target="blank" class="btn-product btn-warmupedia" href="$Specification_Sheet.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Specification Sheet</a>
 			<% end_if %>
 		</div>
 	</div>
@@ -49,7 +49,7 @@
 	 					$Teaser
 	 				</div>
 	 				<div class="link">
-	 					<a href="$Link" class="btn btn-large btn-warmupedia ">Read more <i class="glyphicon glyphicon-menu-right"></i></a>
+	 					<a href="$Link" class="btn btn-large category-button ">Read more <i class="glyphicon glyphicon-menu-right"></i></a>
 	 				</div>
 	 			</div>
 	 		<% end_loop %>

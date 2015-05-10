@@ -23,7 +23,7 @@
 	    		<div class="product-content">
 	     			$Photo.CroppedImage(250,200) 
 	     			<h4> $Title</h4>
-	     			<button class="btn product-button" type="submit">Get an answer <i class="glyphicon glyphicon-menu-right"></i></button>
+	     			<button class="btn category-button" type="submit">Select <i class="glyphicon glyphicon-menu-right"></i></button>
 	    		</div>
 	    	</div>
 	    </a>

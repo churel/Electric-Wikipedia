@@ -201,7 +201,7 @@ input[type="submit"] {
 .banner-content-product h1 {
   text-align: left;
 }
-.product-content button {
+.product-content button.product-button {
   background: none;
   border: solid;
   border-width: 2px;
@@ -209,21 +209,22 @@ input[type="submit"] {
   padding: 17px 35px;
   text-transform:uppercase;
 }
-.btn-product {
-  background-color: white;
+.category-button {
+
+  background-color: #ce1126;
+  color:white;
   border: solid;
   border-width: 2px;
-  border-color: white;
   margin: 25px;
-  padding: 17px 35px;
-  text-transform:uppercase;
-  color:#505050 ;
+  padding: 12px 30px;
   margin:1px;
-  display: block;
-  float: left;
   margin: 20px;
+  border-radius: 25px;
 }
-
+.category-button:hover {
+  background-color: #df2237;
+  color:white;
+}
 #btn-top {
   color: #505050;
   display: inline-block;
@@ -251,7 +252,7 @@ input[type="submit"] {
   color: white;
   text-decoration: none;
 }
-.product-content button:hover{
+.product-content button.product-button:hover{
   background-color: white;
   border: solid 2px white;
   color: #505050;
@@ -259,11 +260,6 @@ input[type="submit"] {
 .product-inside-block  {
   color:#505050;
   text-align:center;
-}
-.product-inside-block button:hover{
-  color:white;
-  background-color:#505050;
-   border: solid 2px white;
 }
 .product-box:hover {
   text-decoration:none;
@@ -283,7 +279,12 @@ input[type="submit"] {
   background-color: #505050;
   color:white;
 }
-
+.products-download .btn-warmupedia {
+  background-color:white;
+}
+.products-download .btn-warmupedia:hover {
+  background-color:#505050;
+}
 #SearchForm_SearchForm input[type="text"], input[type="email"] textarea {
   float: left;
   border: 1px solid #cccccc;
