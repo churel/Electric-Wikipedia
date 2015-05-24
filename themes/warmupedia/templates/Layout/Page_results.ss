@@ -22,7 +22,7 @@
                 Article : {$Title}
             </div>
             <div class="link">
-                <a href="$Link" class="btn btn-large btn-warmupedia ">Read more <i class="glyphicon glyphicon-menu-right"></i></a>
+                <a href="$Link" class="btn btn-large category-button  ">Read more <i class="glyphicon glyphicon-menu-right"></i></a>
             </div>
             
             
