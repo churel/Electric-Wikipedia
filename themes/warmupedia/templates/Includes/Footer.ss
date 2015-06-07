@@ -24,7 +24,7 @@
 		</div>
 		
 
-		<div class="col-md-4 socials">
+		<div class="col-md-3 socials">
 			<h3>Social Media <i class="icon-plus"></i></h3>
 			<a href="https://www.facebook.com/WarmupNorthAmerica" class="icon-social icon-facebook" target="_blank" onclick="ga('send', 'social', 'Facebook', 'Click', 'Browse Products', {'page': document.URL});">facebook</a>
 			<a href="https://www.linkedin.com/company/warmup-inc?trk=nmp_rec_act_company_photo" class="icon-social icon-linkedin" target="_blank" onclick="ga('send', 'social', 'LinkedIn', 'Click', 'Browse Products', {'page': document.URL});">linkedin</a>
@@ -35,8 +35,7 @@
 
 		
 
-		<div class="clear"></div>
-		<div class="col-md-8 accreditations">
+		<div class="col-md-5 accreditations">
 				<h3>Accreditations</h3>
 			     	<ul>
 	                    <li><img src="/themes/warmupedia/images/accreditations/image6.png" alt="" height="35"></li>
@@ -56,6 +55,10 @@
 	                    <li><img src="/themes/warmupedia/images/accreditations/image7.png" alt="" height="35"></li>
 			     </ul>
 			
+		</div>
+		<div class="col-md-3 contact">
+				<h3>Contact Us</h3>
+			     	<p>Do you have other questions? <a target="_blank" href="http://www.warmup.com/contact-warmup/">Contact us here</a></p>
 		</div>
 	</div>
 	</div>
