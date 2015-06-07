@@ -1,13 +1,14 @@
 <footer class="hidden-print">
 	<div class="container ">
 	<div class="row">
-		<div class="col-md-12 sitemap">
-			<h3>Sitemap <i class="icon-plus"></i></h3>
+		<div class="col-md-12 sitemap" >
+			<div class="row" id="list-link">
+			<h3>Sitemap</h3>
 			<% if $Menu(2) %>
-	 			<ul>
+	 			<ul >
 				  <% loop $Menu(2) %>
-				    <li>
-				    	<a href="$Link" class="link">$Title</a>
+				    <li class="col-md-3">
+				    	<a href="$Link" class="link footer-title-link">$Title</a>
 				    	<% if $Children %>
 				 			<ul>
 							  <% loop $Children %>
@@ -19,6 +20,7 @@
 				  <% end_loop %>
 				</ul>
 			<% end_if %>
+			</div>
 		</div>
 		
 
