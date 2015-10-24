@@ -36,7 +36,7 @@ class Article extends Page {
 	public function getCategoryClass() {
 		$map =  array(
 			'Installation' => 'cat-inst',
-			'Programmation' => 'cat-prog',
+			'Programming' => 'cat-prog',
 			'Wiring'  => 'cat-wir',
 			'Preparing for your project'  => 'cat-prep',
 			'Troubleshooting' => 'cat-troub',
