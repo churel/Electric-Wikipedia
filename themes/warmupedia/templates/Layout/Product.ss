@@ -11,7 +11,7 @@
 				<a target="blank" class="btn-product btn-warmupedia" href="$Manual_Installation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Installation Manual</a>
 			<% end_if %>
 			<% if $Manual_Programmation %>
-				<a target="blank" class="btn-product btn-warmupedia" href="$Manual_Programmation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Programmation Manual</a>
+				<a target="blank" class="btn-product btn-warmupedia" href="$Manual_Programmation.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Programming Manual</a>
 			<% end_if %>
 			<% if $Specification_Sheet %>
 				<a target="blank" class="btn-product btn-warmupedia" href="$Specification_Sheet.url"> <i class="glyphicon glyphicon-download-alt"> </i>  Download Specification Sheet</a>
