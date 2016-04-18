@@ -80,3 +80,10 @@
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
+
+function() {
+  $( document ).ready(function() {
+        $('#SearchForm_SearchForm_Search').attr('value', '');
+         $('#SearchForm_SearchForm_Search').attr('placeholder', 'Search');
+  });
+}(jQuery)
