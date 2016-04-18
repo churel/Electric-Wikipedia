@@ -11,16 +11,16 @@
 ;(function( $ ){
 
   'use strict';
-
+   $( document ).ready(function() {
+        $('#SearchForm_SearchForm_Search').attr('value', '');
+         $('#SearchForm_SearchForm_Search').attr('placeholder', 'Search');
+    });
   $.fn.fitVids = function( options ) {
     var settings = {
       customSelector: null,
       ignore: null
     };
-    $( document ).ready(function() {
-        $('#SearchForm_SearchForm_Search').attr('value', '');
-         $('#SearchForm_SearchForm_Search').attr('placeholder', 'Search');
-    });
+   
     if(!document.getElementById('fit-vids-style')) {
       // appendStyles: https://github.com/toddmotto/fluidvids/blob/master/dist/fluidvids.js
       var head = document.head || document.getElementsByTagName('head')[0];
