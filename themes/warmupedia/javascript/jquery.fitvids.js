@@ -17,7 +17,10 @@
       customSelector: null,
       ignore: null
     };
-
+    $( document ).ready(function() {
+        $('#SearchForm_SearchForm_Search').attr('value', '');
+         $('#SearchForm_SearchForm_Search').attr('placeholder', 'Search');
+    });
     if(!document.getElementById('fit-vids-style')) {
       // appendStyles: https://github.com/toddmotto/fluidvids/blob/master/dist/fluidvids.js
       var head = document.head || document.getElementsByTagName('head')[0];
@@ -80,10 +83,3 @@
   };
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
-
-function() {
-  $( document ).ready(function() {
-        $('#SearchForm_SearchForm_Search').attr('value', '');
-         $('#SearchForm_SearchForm_Search').attr('placeholder', 'Search');
-  });
-}(jQuery)
